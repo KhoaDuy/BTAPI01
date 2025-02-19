@@ -1,0 +1,31 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: Ecommerce
+  datasource:
+    url: jdbc:mysql://localhost:3306/project
+    username: xxxx
+    password: xxxx
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+        enable_lazy_load_no_trans: true
+        format_sql: true
+    show-sql: true
+
+  # send-mail
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: xxxxx
+    password: xxxxx
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
